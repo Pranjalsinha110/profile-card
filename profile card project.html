@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: ghostwhite;
+}
+.image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgb(0, 140, 255) ;
+    padding: 3px;
+    position: relative;
+   
+
+}
+.outer-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color:rgb(255, 255, 255);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: white;
+    border-radius: 24px;
+    height: 500px;
+    box-shadow:5px 5px 20px 12px rgba(0, 0, 0, 0.185);
+    position: relative;
+
+}
+.profile-card::before{
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    border-radius: 24px 24px 0px 0px ;
+                    left: 0px;
+                    height: 36%;
+                    width: 100%;
+                    background-color:#1E90FF;
+}
+
+.text{
+    font-family:"poppins",serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+
+}
+.text .name{
+    font-family:"poppins",serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+    
+}
+.icons{
+   display: flex;
+   align-items: center;
+   
+
+}
+.logo{
+
+    background-color: skyblue;
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.share{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+.share-icon{
+    padding: 0 29px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size:25px;
+    color: grey;
+    margin-top: 60px;
+    border-right: 2px solid grey;
+    
+
+}
+.share-icon:last-child{
+    border-right: 0px solid grey;
+}
+.note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+.inside-note{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-top:10px ;
+    font-weight: 200;   
+}
+
+</style>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="profile-card">
+        <div class="outer-image">
+            <img src="2.pranjalsinha.jpg" class="image"/>
+        </div>
+
+        <div class="text">
+            <span class="name"><b>Pranjal sinha</b></span>
+        </div>
+
+        <div class="icons">
+           <a href="#" class="logo" style="background-color: rgb(127, 255, 144);">
+            <i class='bx bxl-whatsapp'></i>
+         </a>
+          
+           <a href="https://www.instagram.com/pranjal._sinha/" class="logo" style="background-color:deeppink;" target="_blank">
+            <i class='bx bxl-instagram'></i>
+        </a>
+
+        <a href="#" class="logo" style="background-color: deepskyblue;"> 
+            <i class='bx bxl-twitter'></i>
+        </a>
+
+           <a href="https://l.instagram.com/?u=https%3A%2F%2Fyoutube.com%2Fchannel%2FUC7vz4Lk9tR_1QU1PppuU8zA&e=AT0khdRO4TlKMRiLOcXOb8K-3TepBP9XCrvSTf3AVgCacZNumyWMOFOov2kLKIDbl4CUgyceMwRgXBrj_BEtfIlvfciPxj20GdtmdTc" class="logo" style="background-color: red;">
+            <i class='bx bxl-youtube'></i>
+            </a>
+        </div>
+        <div class="note">
+            <span class="inside-note">Contact us !</span>
+        </div>
+        <div class="share">
+            <a href="#" class="share-icon" style="color: black;"> 
+                <i class='bx bx-share'></i>
+            </a>
+            <a href="#" class="share-icon" style="color:red;"> 
+                <i class='bx bx-heart'></i>
+            </a>
+            <a href="#" class="share-icon" style="color:rgb(245, 180, 16);"> 
+                <i class='bx bx-bell'></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
